@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 // ─── ICONS ────────────────────────────────────────────────────────────────────
 const Icon = ({ name, size = 20, className = "" }) => {
@@ -173,7 +173,7 @@ const useAuth = () => {
 // ─── NAVBAR ────────────────────────────────────────────────────────────────────
 const Navbar = ({ onNavigate, currentPage, user, onLogout }) => {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
