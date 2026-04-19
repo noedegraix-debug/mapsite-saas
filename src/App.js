@@ -255,7 +255,7 @@ const Dashboard = ({ user, nav, logout }) => {
   const [url, setUrl] = useState("");
   const [gen, setGen] = useState(false);
   const [step, setStep] = useState(0);
-  const [stepText, setStepText] = useState("");
+  const [, setStepText] = useState("");
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
   const [siteHTML, setSiteHTML] = useState("");
